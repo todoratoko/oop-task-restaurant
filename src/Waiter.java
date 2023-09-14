@@ -1,4 +1,4 @@
 public class Waiter {
     private String name;
-    private double tipsCash;
+    private double cashFromTip;
 }
