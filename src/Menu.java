@@ -1,8 +1,2 @@
-import consumables.Consumables;
-
-import java.util.HashMap;
-
-public class Menu {
-    HashMap<String, Consumables> menu = new HashMap<>();
-
+package PACKAGE_NAME;public class Menu {
 }
