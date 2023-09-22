@@ -1,8 +1,6 @@
-package consumables;
+package restaurant.consumables;
 
-public abstract class Food implements Consumables{
-    private String name;
-    protected double price;
+public abstract class Food extends MenuListConsumables{
     private int weight;
 
     public Food(String name) {
@@ -11,4 +9,9 @@ public abstract class Food implements Consumables{
     }
 
     protected abstract int getWeight();
+
+    @Override
+    public MenuKind getMenuKind() {
+        return MenuKind.MEAL;
+    }
 }

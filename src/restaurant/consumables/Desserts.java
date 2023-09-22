@@ -1,6 +1,6 @@
-package consumables;
+package restaurant.consumables;
 
-import util.Helper;
+import restaurant.util.Helper;
 
 public class Desserts extends Food{
     public Desserts(String name) {
@@ -10,5 +10,10 @@ public class Desserts extends Food{
 
     protected int getWeight() {
         return Helper.getRandom(200,300);
+    }
+
+    @Override
+    public MenuItemType getItemType() {
+        return MenuItemType.DESSERT;
     }
 }

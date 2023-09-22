@@ -1,9 +1,9 @@
-package consumables;
+package restaurant.consumables;
 
-import clients.VeganFoods;
-import util.Helper;
+import restaurant.clients.IVeganFoods;
+import restaurant.util.Helper;
 
-public class Salads extends Food implements VeganFoods {
+public class Salads extends Food implements IVeganFoods {
     public Salads(String name) {
         super(name);
         this.price = 5;
@@ -12,5 +12,10 @@ public class Salads extends Food implements VeganFoods {
     @Override
     protected int getWeight() {
         return Helper.getRandom(300,600);
+    }
+
+    @Override
+    public MenuItemType getItemType() {
+        return MenuItemType.SALAD;
     }
 }
